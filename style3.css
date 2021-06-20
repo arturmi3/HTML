@@ -1,0 +1,121 @@
+body {
+    width: 1000px;
+    margin: 30px auto 30px auto;
+    background-color: rgb(41, 40, 40);
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin: 100px 300px;
+    z-index: 1;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+#main {
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    top: 10px;
+    z-index: 2;
+    
+    text-align: justify;
+    padding: 50px;
+    perspective: 100px;
+}
+
+#main_div {
+    width: 700px;
+    height: 600px;
+    background-color: greenyellow;
+}
+
+#main_div p {
+    margin-bottom: 390px;
+}
+
+section div button {
+    border-radius: 10px;
+}
+
+section div button:hover {
+    background-color: darkorange;
+}
+
+#down:active {
+    background-color: darkorchid;
+}
+
+footer {
+    margin: 10px 100px 10px 100px;
+    text-align: center;
+    color: gray;
+}
+
+.animationDown {
+    animation: sectionDown 2s forwards;
+}
+
+.animationLeft {
+    animation: sectionLeft 2s forwards;
+}
+
+@keyframes sectionDown {
+    0% {
+        transform-origin: bottom;
+        transform: rotateX(0deg) scaleY(1);
+    }
+    20% {
+        transform-origin: bottom;
+        transform: rotateX(3deg) scaleY(0.9);
+    }
+    40% {
+        transform-origin: bottom;
+        transform: rotateX(6deg) scaleY(0.8);
+    }
+    60% {
+        transform-origin: bottom;
+        transform: rotateX(9deg) scaleY(0.7);
+    }
+    80% {
+        transform-origin: bottom;
+        transform: rotateX(12deg) scaleY(0.6);
+    }
+    100% {
+        transform-origin: bottom;
+        transform: rotateX(15deg) scaleY(0.5);
+    }
+}
+
+@keyframes sectionLeft {
+    0% {
+        transform-origin: left;
+        transform: rotateY(0deg) scaleX(1);
+    }
+    20% {
+        transform-origin: left;
+        transform: rotateY(3deg) scaleX(0.86);
+    }
+    40% {
+        transform-origin: left;
+        transform: rotateY(6deg) scaleX(0.72);
+    }
+    60% {
+        transform-origin: left;
+        transform: rotateY(9deg) scaleX(0.58);
+    }
+    80% {
+        transform-origin: left;
+        transform: rotateY(12deg) scaleX(0.44);
+    }
+    100% {
+        transform-origin: left;
+        transform: rotateY(15deg) scaleX(0.3);
+    }
+}

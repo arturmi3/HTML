@@ -1,0 +1,101 @@
+body {
+    width: 1000px;
+    margin: 30px auto 30px auto;
+    background-color: black;
+}
+footer {
+    margin: 10px;
+    text-align: center;
+    color: gray;
+}
+#main {
+    background: whitesmoke;
+    padding: 5% 7% 3% 7%;
+}
+
+#header {
+    padding: bottom 20px;
+}
+
+#header h1 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 350%;
+    text-shadow: 2px 2px slategrey ;
+}
+
+#header h2 {
+    font-size: 200%;
+    text-align: center;
+    color: crimson;
+}
+
+#news {
+    display: flex;
+}
+
+#news h2 {
+    font-weight: bolder;
+    font-size: 110%;
+}
+
+#news1 {
+    margin-left: 5%;
+    width: 45%;
+}
+
+#news2 {
+    margin-right: 5%;
+    width: 45%;
+}
+
+#circles {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#circles p {
+    padding: 35% 0;
+    color: white;
+    font-size: 120%;
+}
+
+#circle1 {
+    background-color: #5094d8;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    opacity: 0.7;
+    text-align: center;
+}
+
+#circle1:hover {
+    opacity: 0.85;
+}
+
+#circle2 {
+    background-color: #5094d8;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    opacity: 0.7;
+    margin-left: -30px;
+    text-align: center;
+}
+
+#circle2:hover {
+    opacity: 0.85;
+}
+
+#line {
+    display: flex
+}
+
+#paragraphs {
+    margin-top: 50px;
+    display: flex;
+}
+
+#paragraph1 { margin-left: 2%; width: 25%; }
+.paragraph2 { margin-left: 2%; width: 25%; }

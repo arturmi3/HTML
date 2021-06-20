@@ -1,0 +1,86 @@
+body {
+    margin: 30px 80px 30px 80px;
+    background-color:darkgrey;
+    font-family: Arial, sans-serif;
+    font-size: 125%;
+}
+
+#header {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    border-bottom: brown solid;
+}
+#header ul {
+    list-style-type: none;
+    overflow: hidden;
+    justify-content: flex-end;
+}
+#header li {
+    float: left;
+    height: 40px;
+    padding: 5px 15px;
+    justify-content: center;
+    border-radius: 5px;
+}
+#header li:first-of-type {
+    background-color: yellow;
+}
+#header a {
+    display: block;
+    padding: 0 16px;
+    text-decoration: none;
+}
+#header li:hover {
+    background-color: cadetblue;
+}
+#logo {
+    margin: 0 20px;
+    padding: 0;
+    font-size: 300%;
+    font-weight: 700;
+    flex: 0 0 200px;
+}
+#logo p {
+    margin: 0;
+}
+#main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border-bottom: brown solid;
+}
+
+#main div:first-of-type {
+    flex: 1 1 500px;
+    align-content: flex-start;
+}
+#main div:last-of-type {
+    padding: 50px;
+    justify-self: flex-end;
+    margin-left: auto;
+}
+
+#articles {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border-bottom: brown solid;
+}
+
+#articles div {
+    flex: 1 1 250px;
+    padding: 20px;
+}
+
+.dot {
+    color: yellow;
+}
+
+#footer_logo {
+    font-size: 120%;
+}
+
+#footer_copyright {
+    font-size: 100%;
+}
