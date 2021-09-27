@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+
+#app {
+    border: 1px solid black;
+    width: 600px;
+    height: 600px;
+    font-family: sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(83, 83, 83);
+}    
+
+
+.header > * {
+    color: #eeeeee;
+}
+
+.header_rusza {
+    padding: 12px;
+}
+
+.header_stan {
+    padding: 12px;
+    text-align: center;    
+}
+
+.header_reset {
+    padding: 12px;
+    align-items: center;
+    justify-content: right;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+.plansza {
+    display: grid;
+    background: #cccccc;
+    gap: 5px;
+    padding: 10px;
+    flex-grow: 1;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.plansza_pole {
+    background: #ffffff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    font-family: cursive;
+    color: #222222;
+}
+
+.plansza_pole:hover {
+    background: #eeeeee;
+}
+
+.plansza_pole--winner {
+    color: red;
+}
