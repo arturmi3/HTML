@@ -23,10 +23,12 @@ body {
     justify-content: center;
     border-radius: 5px;
 }
-#header li:first-of-type {
+
+.menu_wybrany {
     background-color: yellow;
 }
-#header a {
+
+#header li a {
     display: block;
     padding: 0 16px;
     text-decoration: none;
@@ -61,6 +63,19 @@ body {
     margin-left: auto;
 }
 
+#blog {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border-bottom: brown solid;
+}
+
+#blog  div {
+    flex: 1 1 250px;
+    padding: 20px;
+    border-bottom: blueviolet;
+}
+
 #articles {
     display: flex;
     flex-wrap: wrap;
@@ -77,10 +92,115 @@ body {
     color: yellow;
 }
 
+.btn {
+    background-color: yellow;
+    width: 150px;
+    height: 30px;
+}
+
+#name
+{
+    width: 220px;
+    height: 28px;
+}
+
+#email {
+    width: 250px;
+    height: 28px;
+}
+
+#message {
+    width: 420px;
+    height: 150px;
+}
+
 #footer_logo {
     font-size: 120%;
 }
 
 #footer_copyright {
     font-size: 100%;
+}
+
+#photos { 
+    margin-left: auto;
+    margin-right: auto;
+
+    display: grid;
+
+    grid-gap: 10px;
+    grid-template-columns: 240px 240px 240px;
+    grid-template-rows: 240px 240px 240px 240px;
+    grid-auto-rows: 2400px;
+    grid-auto-columns: 240px;
+    background-color: darkgray;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px 10px 0px;
+    border-color:transparent;
+    border-style:none;
+
+}
+.photo { 
+    width: 220px;
+    height: 220px;
+    opacity: 90%;
+    display: grid;
+    background-color: cornflowerblue;
+}
+
+
+.styles {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    padding: 0;
+    margin: 0 0;
+    border: brown solid;
+}
+
+.styles div {
+    border: brown solid;
+    padding: 0 0;
+    margin: 0 0;
+}
+
+.half {
+	width: 46%;
+	margin-right: 3%;
+	float: left;
+}
+.third{
+	width: 30%;
+	margin-right: 3%;
+	float: left;
+}
+.fourths{
+	width: 22%;
+	margin-right: 3%;
+	float: left;
+}
+.two-third, .cta.two-third{
+	width: 63%;
+	margin-right: 3%;
+	float: left;
+}
+.three-fourths{
+	width: 72%;
+	margin-right: 3%;
+	float: left;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.last { 
+    margin-right: 0!important; 
+    padding-right: 0!important; 
+    border-right: none!important; 
+}
+.clearfix:after {
+    clear: both;
 }

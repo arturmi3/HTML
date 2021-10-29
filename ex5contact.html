@@ -16,36 +16,34 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="ex5.html">Home</a></li>
                 <li><a href="ex5about.html">About</a></li>
                 <li><a href="ex5styles.html">Styles</a></li>
                 <li><a href="ex5gallery.html">Gallery</a></li>
                 <li><a href="ex5blog.html">Blog</a></li>
-                <li><a href="ex5contact.html">Contact</a></li>
+                <li class="menu_wybrany"><a href="ex5contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="main">
-        <div class="main-content">
-            <div class="clearfix"
-                <h1>Contact Me</h1>
-                <p class="lead">Praesent commodo cursus magna, venenatis vestibulum. Donec id elit non mi porta gravida at eget vel scelerisl consectetur etsie. </p>
+        <div>
+            <h1>Contact Me</h1>
+            <p class="lead">Praesent commodo cursus magna, venenatis vestibulum. Donec id elit non mi porta gravida at eget vel scelerisl consectetur etsie. </p>
 
-                <p class="">Nullam id dolor id nibh ultricies vehicula ut id elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla.</p>
+            <p class="">Nullam id dolor id nibh ultricies vehicula ut id elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla.</p>
 
 
-                <form id="contactform" action="php/processForm.php" method="post">
-                    <table width="100%" class="tableless">
-                        <tr><td><input type="text" id="name" name="name" placeholder="What's your name" autofocus /></td></tr>
-                        <tr><td><input type="email" id="email" name="email" placeholder="Email goes here" /></td></tr>
-                        <tr><td><textarea id="message" name="message" rows="5" cols="20" placeholder="Whats this about?"></textarea></td></tr>
+            <form id="contactform" action="processForm" method="post">
+                <table width="100%" class="tableless">
+                    <tr><td><input type="text" id="name" name="name" placeholder="Imię nazwisko" autofocus /></td></tr>
+                    <tr><td><input type="email" id="email" name="email" placeholder="Tutaj twój adres email" /></td></tr>
+                    <tr><td><textarea id="message" name="message" rows="5" cols="20" placeholder="Treść wiadomości..."></textarea></td></tr>
 
-                        <tr><td><input name="button" class="btn" type="submit" value="Send Message" id="send" /><br /></td></tr>
-                    </table>
-                </form>
-                <div id="response"></div>
-            </div>
+                    <tr><td><input name="button" class="btn" type="submit" value="Wyślij wiadomość" id="send" /><br /></td></tr>
+                </table>
+            </form>
+            <div id="response"></div>
         </div>
     </section>
 
