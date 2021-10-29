@@ -1,71 +1,70 @@
-* {
-    margin: 0;
-    padding: 0;
-}
 
 body {
-    margin: 30px auto 30px auto;
-    background-color: rgb(41, 40, 40);
-    font-family: Arial, sans-serif;
     display: flex;
     flex-wrap: wrap;
+    margin: 30px auto 30px auto;
+    background-color: seashell;
+    font-family: Arial, sans-serif;
 }
 
-nav {
-    flex: 0 0 150px;
-    height: 100%;
-    background-color: #252a3a;
-    font-weight: 500;
-    padding: 0 20px 0 20px;
-    border: 2px solid;
-}
-
-nav ul {
-    list-style-type: none;
-    border-radius: 3px;
-    margin-left: auto;
-}
-
-nav li {
-    padding: 8px 16px;
-    margin: 16px 0px;
-    border-radius: 10px;
-    background: #1B98F8;
-}
-
-nav a, nav p {
-    display: block;
-    padding: 3px 10px;
-}
-
-nav a:hover {
-    color: #069;
-}
-
-#main {
-    flex: 0 0 400px;
-    max-height: 600px;
-    overflow: auto;
-}
-
-#main li {
-    list-style-type: none;
+header {
+    width: 15%;
+    margin: 0;
     padding: 5px;
+}
+header nav {
+    display: flex;
+    flex-direction: column;
+}
+header #logo {
+    color: mediumvioletred;
+    font-size: 125%;
+    background-color: lightyellow;
+    height: 40px;
+}
+header nav ul {
+    list-style-type: none;
+    justify-content: left;
+    padding: 0;
+}
+header nav li {
+    /* float: left; */
+    height: 40px;
+    padding: 5px 15px;
+    margin: 2px;
+    background-color: yellow;
+    text-align: center;
+}
+header nav li:hover {
     background-color: cadetblue;
 }
 
+#main {
+    width: 35%;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    margin: 0;
+    padding: 5px;
+    border-left: 1px solid magenta;
+    border-right: 1px solid magenta;
+}
+
 .list_item {
-    border-bottom: darkorange solid 1px;
+    border-bottom: 1px solid magenta;
 }
 
 .list_item img {
     float: left;
     padding: 2px;
+    max-width: 50px;
 }
 
 .list_item_title {
     float: left;
     padding: 5px;
+    font-weight: 700;
 }
 
 .list_item_wrap {
@@ -79,8 +78,9 @@ nav a:hover {
 aside {
     flex: 1 1 350px;
     height: 100%;
-    background: lightslategray;
     padding: 10px;
+    margin: 0;
+    padding: 5px;
 }
 
 aside h1 {
@@ -90,4 +90,7 @@ aside h1 {
 aside button {
     border-radius: 10px;
     padding: 10px;
+}
+aside button:hover {
+    background: lightskyblue;
 }
