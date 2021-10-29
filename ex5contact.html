@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Excercise 5 --- Artur Miękina</title>
+    <title>Excercise-contact 5 --- Artur Miękina</title>
     <link rel="stylesheet" href="style5.css" />
 </head>
 
@@ -27,16 +27,26 @@
     </header>
 
     <section id="main">
-        <div>
-            <h1>You idiots!</h1>
-            <h2>These are not them! You’ve captured their stunt doubles!</h2>
-            <h3>— Spaceballs</h3>
-            <p>No more boring V-Cards, Selfy is the perfect theme for self promotion.
-                A little piece of the internet all about you, customise and self express with Selfy...
-                <a href="#">Read More</a>
-            </p>
+        <div class="main-content">
+            <div class="clearfix"
+                <h1>Contact Me</h1>
+                <p class="lead">Praesent commodo cursus magna, venenatis vestibulum. Donec id elit non mi porta gravida at eget vel scelerisl consectetur etsie. </p>
+
+                <p class="">Nullam id dolor id nibh ultricies vehicula ut id elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla.</p>
+
+
+                <form id="contactform" action="php/processForm.php" method="post">
+                    <table width="100%" class="tableless">
+                        <tr><td><input type="text" id="name" name="name" placeholder="What's your name" autofocus /></td></tr>
+                        <tr><td><input type="email" id="email" name="email" placeholder="Email goes here" /></td></tr>
+                        <tr><td><textarea id="message" name="message" rows="5" cols="20" placeholder="Whats this about?"></textarea></td></tr>
+
+                        <tr><td><input name="button" class="btn" type="submit" value="Send Message" id="send" /><br /></td></tr>
+                    </table>
+                </form>
+                <div id="response"></div>
+            </div>
         </div>
-        <div><img src="ex5img/Portrait.jpg"></div>
     </section>
 
     <section id="articles">
